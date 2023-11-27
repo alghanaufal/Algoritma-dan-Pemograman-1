@@ -10,11 +10,6 @@ void geser(data sihir[], int n)
         len[i] = strlen(sihir[i].str2);
     }
     // lalu setelah itu kita buat variabel untuk menandakan si huruf ini mundur sejauh panjang string
-    /* menggunakan modulus, jadi 97 itu asciinya huruf a, ketika k atau suatu huruf dikurangi panjang, misal huruf a dikurangi 4, otomatis 
-    harus ke huruf z lagi, jika tidak, maka akan mengprint suatu karakter dengan ascii tersebut dibawah 97, setelah direset ke z, maka kurangi 
-    dengan k dan -1 karena kita meresetnya ke z, bukan ke z+1, jadi ada -1nya, kondisi ini berlaku hanya jika huruf alfabetnya kurang dari
-    sama dengan 97
-   */
     int k = 0;
     for (int i = 0; i < n; i++)
     {
